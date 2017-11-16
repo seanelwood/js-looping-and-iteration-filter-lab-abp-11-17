@@ -10,22 +10,22 @@ function findMatching (drivers, name) {
 
 }
 
-// function fuzzyMatch(drivers, name) {
-//   return drivers.filter (function(driver) {
-//     if (name[0] === drivers[0];) {
-//       return true;
-//     } else {
-//       return false;
-//       }
-//   })
-// }
-
-function matchName(drivers, name) {
+function fuzzyMatch(drivers, name) {
   return drivers.filter (function(driver) {
-  if(name === driver.substr(1,2)) {
-    return true;
-  } else {
-    return false;
-    }
+    if (name === driver.substr(1,2)) {
+      return true;
+    } else {
+      return false;
+      }
   })
 }
+
+// function matchName(drivers, name) {
+//   return drivers.filter (function(driver) {
+//   if(name === driver) {
+//     return true;
+//   } else {
+//     return false;
+//     }
+//   })
+// }
