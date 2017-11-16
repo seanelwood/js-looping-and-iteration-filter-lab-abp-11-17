@@ -12,7 +12,7 @@ function findMatching (drivers, name) {
 
 function fuzzyMatch(drivers, name) {
   return drivers.filter (function(driver) {
-    if (name === driver.substr(1,3)) {
+    if (name.substr(1,2) === driver.substr(1,2)) {
       return true;
     } else {
       return false;
