@@ -22,7 +22,7 @@ function findMatching (drivers, name) {
 
 function matchName(drivers, name) {
   return drivers.filter (function(driver) {
-  if(name === driver) {
+  if(name === driver.substr(1,2)) {
     return true;
   } else {
     return false;
